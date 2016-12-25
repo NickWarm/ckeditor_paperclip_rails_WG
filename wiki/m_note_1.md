@@ -75,6 +75,8 @@ and then `rake db:migrate`
 
 ![](./img/upload_img_2.png)
 
+編輯時的畫面
+
 ![](./img/ckeditor_2.png)
 
 
@@ -86,7 +88,7 @@ and then `rake db:migrate`
 
 讓show頁面可以顯示ckeditor的完整內容
 - [rails API - raw](http://api.rubyonrails.org/classes/ActionView/Helpers/OutputSafetyHelper.html#method-i-raw)
-
+- [example-rails-ckeditor-uploader/example_ckeditor/app/views/posts/show.html.erb](https://github.com/JokerCatz/example-rails-ckeditor-uploader/blob/master/example_ckeditor/app/views/posts/show.html.erb)
 
 fix `app/views/posts/show.html.erb`
 
@@ -100,6 +102,10 @@ fix `app/views/posts/show.html.erb`
 
 ...
 ```
+
+>PS：上面這寫法是有危險性的，請見：[别用 raw 和 html_safe · Ruby China](https://ruby-china.org/topics/16633)
+>
+>我個人實測用`raw`、`html_safe`可以看到ckeditor的效果，若是用`simple_format`、`sanitize`則無法
 
 scaffold生成的index頁面，會顯示該篇post的body，所以我們把它關掉
 

@@ -14,6 +14,7 @@ JC流寫法
   - JC的這則範例會有XSS資安漏洞，建議 ckeditor 加上類似 bbcode + Rails嚴謹的過濾機制
   - XSS
     - [Prevent XSS "on" Attribute Attacks in CKEditor 3.x](https://davidwalsh.name/prevent-xss-ckeditor)
+    - [Frontend security and Cross-Site Scripting (XSS) for Ruby on Rails developers · molily](http://molily.de/xss/)
   - bbcode
     - [Rails 下的 form method 技法 - Rails - Rails Fun!! Ruby & Rails 中文論壇](http://railsfun.tw/t/rails-form-method/121)
     - [JokerCatz/bbcoder - GitHub](https://github.com/JokerCatz/bbcoder)
